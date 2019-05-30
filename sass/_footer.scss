@@ -1,0 +1,18 @@
+// FOOTER SCSS
+
+.site-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .footer-about,
+  .footer-archives,
+  .footer-submission,
+  .red-brand {
+    color: #0c0;
+  }
+  p {
+    font-family: $font__main;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

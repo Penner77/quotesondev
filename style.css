@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-LightItalic.eot");
+  src: url("../../assets/fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-LightItalic.woff") format("woff"), url("../../assets/fonts/Exo-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Light.eot");
+  src: url("../../assets/fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/Exo-Light.woff") format("woff"), url("../../assets/fonts/Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-Medium.eot");
+  src: url("../../assets/fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-Medium.woff2") format("woff2"), url("../../assets/fonts/Exo-Medium.woff") format("woff"), url("../../assets/fonts/Exo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/Exo-MediumItalic.eot");
+  src: url("../../assets/fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-MediumItalic.woff") format("woff"), url("../../assets/fonts/Exo-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -230,7 +258,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -345,61 +373,58 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: #222;
+  border: 2px solid #0c0;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .75rem;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 0.75rem 2.25rem; }
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:active,
+  input[type='submit']:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='url']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
   padding: 3px; }
 
 textarea {
@@ -411,11 +436,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
+  color: #0c0;
+  text-decoration: none; }
+  a:hover {
+    color: #00a300; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -426,7 +450,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  display: none; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -591,5 +616,146 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site-branding {
+  padding-top: 30px;
+  padding-bottom: 0px; }
+
+.site-info {
+  padding-bottom: 50px; }
+  .site-info p {
+    min-width: 60px; }
+
+.nav-previous {
+  display: none; }
+
+.home .site {
+  width: 100%; }
+
+.home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222; }
+
+.home html {
+  letter-spacing: 1.5rem;
+  font-size: 16px; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background-color: #222222;
+  font-family: "Exo", sans-serif;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.site-branding,
+.site-info {
+  background-color: #222222; }
+
+.site-info .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.site-info .menu li {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.site-description {
+  margin: 0 auto; }
+  .site-description p {
+    display: none; }
+
+p,
+h2,
+.post-type .post .button {
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.content-area {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #222; }
+
+.quote-submission {
+  width: 100vw; }
+  .quote-submission p {
+    background-color: #222;
+    color: white;
+    font-family: Exo, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0, 0, 25px, 0; }
+
+@media (min-width: 1080px) {
+  .content-area::before {
+    color: #0c0;
+    font-family: 'fontawesome';
+    font-weight: normal;
+    content: '\f10d';
+    text-align: center;
+    font-size: 150px;
+    padding-right: 25px;
+    vertical-align: top; }
+  .content-area::after {
+    color: #0c0;
+    font-family: 'fontawesome';
+    font-weight: normal;
+    content: '\f10e';
+    text-align: center;
+    font-size: 150px;
+    padding-left: 25px;
+    vertical-align: top; } }
+
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .site-info .footer-about,
+  .site-info .footer-archives,
+  .site-info .footer-submission,
+  .site-info .red-brand {
+    color: #0c0; }
+  .site-info p {
+    font-family: "Exo", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5; }

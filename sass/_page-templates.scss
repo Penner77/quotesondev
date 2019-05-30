@@ -2,6 +2,135 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site-branding {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.site-info {
+  padding-bottom: 50px;
+  p {
+    min-width: 60px;
+  }
+}
+
+.nav-previous {
+  display: none;
+}
+
+.home {
+  .site {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+  }
+
+  html {
+    letter-spacing: 1.5rem;
+    font-size: 16px;
+  }
+}
+
+.site-content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #222222;
+  font-family: $font__main;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.site-branding,
+.site-info {
+  background-color: #222222;
+}
+
+.site-info .menu {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.site-description {
+  margin: 0 auto;
+  p {
+    display: none;
+  }
+}
+
+p,
+h2,
+.post-type .post .button {
+  color: #fff;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.content-area {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  color: #fff;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #222;
+}
+
+.quote-submission {
+  width: 100vw;
+  p {
+    background-color: #222;
+    color: white;
+    font-family: Exo, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0, 0, 25px, 0;
+  }
+}
+
+@include desktop {
+  .content-area {
+    &::before {
+      color: #0c0;
+      font-family: 'fontawesome';
+      font-weight: normal;
+      content: '\f10d';
+      text-align: center;
+      font-size: 150px;
+      padding-right: 25px;
+      vertical-align: top;
+    }
+    &::after {
+      color: #0c0;
+      font-family: 'fontawesome';
+      font-weight: normal;
+      content: '\f10e';
+      text-align: center;
+      font-size: 150px;
+      padding-left: 25px;
+      vertical-align: top;
+    }
+  }
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */
