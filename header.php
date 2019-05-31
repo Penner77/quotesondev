@@ -26,7 +26,7 @@
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 				<!-- <p class="site-description"><?php bloginfo('description'); ?></p> -->
 
-				<a href="<?php echo get_home_url(); ?>"><img alt="Quotes on Dev Logo" class=“wuotes-logo” src="<?php echo get_template_directory_uri() . '/assets/qod-logo.svg' ?>">
+				<a href="<?php echo get_home_url(); ?>"><img alt="Quotes on Dev Logo" class=“quotes-logo” src="<?php echo get_template_directory_uri() . '/assets/qod-logo.svg' ?>">
 				</a>
 			</div><!-- .site-branding -->
 

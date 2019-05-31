@@ -14,10 +14,6 @@
 
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 
-		<!-- 
-		<p class="footer-about"><a href="quotesondev/about/">About</a></p>
-		<p class="footer-archives"><a href="quotesondev/archives/">Archives</a></p>
-		<p class="footer-submission"><a href="quotesondev/submit/">Submit a Quote</a></p> -->
 		<p class="footer-branding">Brought to you by <a href="https://redacademy.com/vancouver/"><span class="red-brand">RED Academy</span></a></p>
 
 	</div><!-- .site-info -->

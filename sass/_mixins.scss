@@ -18,3 +18,23 @@ $desktop-width: 1080px;
     @content;
   }
 }
+
+@mixin quote-icons {
+  color: #0c0;
+  font-family: 'fontawesome';
+  font-weight: normal;
+  text-align: center;
+  font-size: 150px;
+}
+
+@mixin form-format {
+  padding-left: 3px;
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.75rem 2.25rem;
+}

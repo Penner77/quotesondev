@@ -2,9 +2,49 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.blog .entry-content,
+.entry-meta {
+  @include desktop {
+    p,
+    h2,
+    .source {
+      font-size: 2rem;
+    }
+  }
+  @include tablet {
+    p,
+    h2,
+    .source {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 .site-branding {
   padding-top: 30px;
   padding-bottom: 0px;
+  width: 100%;
+
+  a {
+    img {
+      width: 300px;
+      @include tablet {
+        width: 500px;
+      }
+      @include desktop {
+        width: 700px;
+        @include center-block;
+      }
+    }
+  }
+}
+
+.site-main .button {
+  @include desktop {
+    width: 700px;
+    margin: 0 auto;
+    @include center-block;
+  }
 }
 
 .site-info {
@@ -19,20 +59,15 @@
 }
 
 .home {
+  background-color: #222;
   .site {
     width: 100%;
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: 1080px;
     padding: 2.5%;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #222;
   }
 
   html {
@@ -97,6 +132,9 @@ h2,
 .quote-submission {
   width: 100vw;
   p {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
     background-color: #222;
     color: white;
     font-family: Exo, sans-serif;
@@ -110,24 +148,15 @@ h2,
 @include desktop {
   .content-area {
     &::before {
-      color: #0c0;
-      font-family: 'fontawesome';
-      font-weight: normal;
-      content: '\f10d';
-      text-align: center;
-      font-size: 150px;
+      @include quote-icons;
       padding-right: 25px;
-      vertical-align: top;
+      content: '\f10d';
     }
     &::after {
-      color: #0c0;
-      font-family: 'fontawesome';
-      font-weight: normal;
-      content: '\f10e';
-      text-align: center;
-      font-size: 150px;
+      @include quote-icons;
+
       padding-left: 25px;
-      vertical-align: top;
+      content: '\f10e';
     }
   }
 }
