@@ -1,14 +1,29 @@
 // FOOTER SCSS
 
 .site-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
   .footer-about,
   .footer-archives,
   .footer-submission,
   .red-brand {
     color: #0c0;
+  }
+  .site-info ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -1px;
+  }
+  .site-info li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: 0.25em 0;
+    padding: 1 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
   }
   p {
     font-family: $font__main;

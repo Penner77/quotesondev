@@ -2,8 +2,14 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+html,
+body {
+  background-color: #222;
+}
+
 .blog .entry-content,
 .entry-meta {
+  padding-bottom: 25px;
   @include desktop {
     p,
     h2,
@@ -17,6 +23,15 @@
     .source {
       font-size: 1.5rem;
     }
+  }
+}
+
+body {
+  .container {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    background-color: #222222;
   }
 }
 
@@ -58,16 +73,10 @@
   display: none;
 }
 
-.home {
+.home .page {
   background-color: #222;
   .site {
     width: 100%;
-  }
-
-  .container {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: 2.5%;
   }
 
   html {
@@ -95,6 +104,8 @@
   ul {
     display: flex;
     list-style: none;
+    position: relative;
+    left: -50px;
   }
   li {
     padding-left: 20px;
@@ -130,7 +141,14 @@ h2,
 }
 
 .quote-submission {
-  width: 100vw;
+  width: 70vw;
+  @include tablet {
+    width: 60vw;
+  }
+  @include desktop {
+    width: 50vw;
+  }
+
   p {
     display: flex;
     flex-direction: column;
@@ -160,6 +178,27 @@ h2,
     }
   }
 }
-/* All Archives Page */
+/* Abut Page */
+
+/* Page Archives */
+
+.post-archives,
+.category-archives,
+.tag-archives {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
 
 /* Submit a Quote Page */

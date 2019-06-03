@@ -36,7 +36,7 @@ textarea {
   @include form-format;
 
   &:focus {
-    color: #111;
+    color: grey;
   }
 }
 
@@ -50,5 +50,6 @@ input[type='search'] {
 
 textarea {
   @include form-format;
-  width: 100%;
+  width: 50vw;
+  text-align: start;
 }

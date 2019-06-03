@@ -423,7 +423,7 @@ textarea {
   input[type='password']:focus,
   input[type='search']:focus,
   textarea:focus {
-    color: #111; }
+    color: grey; }
 
 input[type='text'],
 input[type='email'],
@@ -442,7 +442,8 @@ textarea {
   font-weight: 700;
   line-height: 1;
   padding: 0.75rem 2.25rem;
-  width: 100%; }
+  width: 50vw;
+  text-align: start; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -629,23 +630,35 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-@media (min-width: 1080px) {
-  .blog .entry-content p,
-  .blog .entry-content h2,
-  .blog .entry-content .source,
-  .entry-meta p,
-  .entry-meta h2,
-  .entry-meta .source {
-    font-size: 2rem; } }
+html,
+body {
+  background-color: #222; }
 
-@media (min-width: 620px) {
-  .blog .entry-content p,
-  .blog .entry-content h2,
-  .blog .entry-content .source,
-  .entry-meta p,
-  .entry-meta h2,
-  .entry-meta .source {
-    font-size: 1.5rem; } }
+.blog .entry-content,
+.entry-meta {
+  padding-bottom: 25px; }
+  @media (min-width: 1080px) {
+    .blog .entry-content p,
+    .blog .entry-content h2,
+    .blog .entry-content .source,
+    .entry-meta p,
+    .entry-meta h2,
+    .entry-meta .source {
+      font-size: 2rem; } }
+  @media (min-width: 620px) {
+    .blog .entry-content p,
+    .blog .entry-content h2,
+    .blog .entry-content .source,
+    .entry-meta p,
+    .entry-meta h2,
+    .entry-meta .source {
+      font-size: 1.5rem; } }
+
+body .container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  background-color: #222222; }
 
 .site-branding {
   padding-top: 30px;
@@ -679,15 +692,11 @@ object {
 .nav-previous {
   display: none; }
 
-.home {
+.home .page {
   background-color: #222; }
-  .home .site {
+  .home .page .site {
     width: 100%; }
-  .home .container {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: 2.5%; }
-  .home html {
+  .home .page html {
     letter-spacing: 1.5rem;
     font-size: 16px; }
 
@@ -712,7 +721,9 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none; }
+  list-style: none;
+  position: relative;
+  left: -50px; }
 
 .site-info .menu li {
   padding-left: 20px;
@@ -747,7 +758,13 @@ h2,
   background-color: #222; }
 
 .quote-submission {
-  width: 100vw; }
+  width: 70vw; }
+  @media (min-width: 620px) {
+    .quote-submission {
+      width: 60vw; } }
+  @media (min-width: 1080px) {
+    .quote-submission {
+      width: 50vw; } }
   .quote-submission p {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,22 +800,65 @@ h2,
     padding-left: 25px;
     content: '\f10e'; } }
 
-/* All Archives Page */
-/* Submit a Quote Page */
-.site-info {
+/* Abut Page */
+/* Page Archives */
+.post-archives ul,
+.category-archives ul,
+.tag-archives ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 0px;
+  margin-left: 0px; }
+
+.post-archives li,
+.category-archives li,
+.tag-archives li {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+/* Submit a Quote Page */
+.site-info {
+  position: relative;
+  margin: 1em;
+  overflow: hidden; }
   .site-info .footer-about,
   .site-info .footer-archives,
   .site-info .footer-submission,
   .site-info .red-brand {
     color: #0c0; }
+  .site-info .site-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: -1px; }
+  .site-info .site-info li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin: 0.25em 0;
+    padding: 1 1em;
+    text-align: center;
+    border-left: 1px solid #ccc; }
   .site-info p {
     font-family: "Exo", sans-serif;
     font-size: 1rem;

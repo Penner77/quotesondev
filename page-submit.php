@@ -32,7 +32,7 @@ get_header(); ?>
                                     <!-- the for tag is the same as the input id so the code matches them up -->
                                     Author of Quote
                                 </label>
-                                <input type="text" name="quote_author" id="quote-author">
+                                <input type="text" name="quote_author" id="quote-author" class="input-form" required>
                             </p>
                         </div>
 
@@ -41,9 +41,9 @@ get_header(); ?>
                                 <label for="quote-content">
                                     Quote
                                 </label>
-                                <textarea rows="3" columns="20" name="quote_content" id="quote-content">
+                                <textarea rows="3" columns="20" name="quote_content" id="quote-content" class="input-form field-required" required>
 
-                                            </textarea>
+                                                                                </textarea>
                             </p>
                         </div>
 
@@ -53,7 +53,7 @@ get_header(); ?>
                                 <label for="quote-source">
                                     Where did you find this quote?
                                 </label>
-                                <input type="text" name="quote_source" id="quote-source">
+                                <input type="text" name="quote_source" id="quote-source" class="input-form field-required" required>
                             </p>
                         </div>
 
@@ -63,11 +63,11 @@ get_header(); ?>
                                 <label for="quote-source-url">
                                     Provide the URL of the quote source, if available.
                                 </label>
-                                <input type="url" name="quote_source_url" id="quote-source-url">
+                                <input type="url" name="quote_source_url" id="quote-source-url" class="input-form field-required">
                             </p>
                         </div>
 
-                        <input type="submit" value="Submit Quote">
+                        <input id="submit-button" type="submit" value="Submit Quote" class="input-form field-required" onclick="showSuccess()">
                     </form>
 
 
