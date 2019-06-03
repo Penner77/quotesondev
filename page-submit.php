@@ -29,7 +29,7 @@ get_header(); ?>
                         <div>
                             <p>
                                 <label for="quote-author">
-                                    <!-- the for tag is the same as the input id so the code matches them up -->
+
                                     Author of Quote
                                 </label>
                                 <input type="text" name="quote_author" id="quote-author" class="input-form" required>
@@ -43,7 +43,7 @@ get_header(); ?>
                                 </label>
                                 <textarea rows="3" columns="20" name="quote_content" id="quote-content" class="input-form field-required" required>
 
-                                                                                </textarea>
+                                                                                        </textarea>
                             </p>
                         </div>
 
@@ -72,7 +72,6 @@ get_header(); ?>
 
 
                     <p class="submit-success-message" style="display:none;">Thanks for the awesome quote!</p>
-                    <!-- TODO - needs to be hidden (use jquery), slide up to hide the form once submission complete and display the message -->
 
                 </div>
 
