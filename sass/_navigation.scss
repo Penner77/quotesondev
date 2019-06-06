@@ -4,7 +4,8 @@
 
 /* Links */
 
-a {
+a,
+.red-brand a {
   color: $color__link;
 
   &:hover {
@@ -15,7 +16,7 @@ a {
   }
   &:hover,
   &:active {
-    outline: 0;
+    color: $color__link-hover;
   }
 
   text-decoration: none;

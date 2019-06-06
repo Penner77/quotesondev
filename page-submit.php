@@ -14,7 +14,7 @@ get_header(); ?>
 
             <header class="entry-header">
 
-                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                <?php the_title('<h1 class="entry-title">', ' a Quote</h1>'); ?>
 
             </header>
 
@@ -25,7 +25,7 @@ get_header(); ?>
 
                 <div class="quote-submission-wrapper">
 
-                    <form name="quote_form" id="quote-submission-form">
+                    <form name="quote_form" id="quote-submission-form" class="quote-submission-wrapper">
                         <div>
                             <p>
                                 <label for="quote-author">
@@ -43,7 +43,7 @@ get_header(); ?>
                                 </label>
                                 <textarea rows="3" columns="20" name="quote_content" id="quote-content" class="input-form field-required" required>
 
-                                                                                        </textarea>
+                                                                                                        </textarea>
                             </p>
                         </div>
 
@@ -66,8 +66,9 @@ get_header(); ?>
                                 <input type="url" name="quote_source_url" id="quote-source-url" class="input-form field-required">
                             </p>
                         </div>
-
-                        <input id="submit-button" type="submit" value="Submit Quote" class="input-form field-required" onclick="showSuccess()">
+                        <div class="button-container">
+                            <input id="submit-button" type="submit" value="Submit Quote" class="input-form field-required">
+                        </div>
                     </form>
 
 

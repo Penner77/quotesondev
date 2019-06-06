@@ -20,9 +20,9 @@ get_header(); ?>
                 <ul>
                     <?php
                     $posts = get_posts('posts_per_page=-1');
-                    // using -1 means "grab all the posts" rather than setting to a specific number
+
                     foreach ($posts as $post) : setup_postdata($post);
-                        // setting up the post data allows us to use the template tags for searching looping
+
                         ?>
                         <li>
                             <a href="<?php the_permalink(); ?>">

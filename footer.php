@@ -11,9 +11,9 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
-		<p>
-			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-			<span class="footer-branding"> Brought to you by <a href="https://redacademy.com/vancouver/"><span class="red-brand">RED Academy</span></a></span></p>
+
+		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+		<span class="footer-branding">Brought to you by <a href="https://redacademy.com/vancouver/"></span><span class="red-brand">RED Academy</span></a>
 
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->

@@ -7,7 +7,10 @@ body {
   background-color: #222;
 }
 
+.home .entry-content,
 .blog .entry-content,
+.single .entry-content,
+.page .type-page .entry-content,
 .entry-meta {
   padding-bottom: 25px;
   @include desktop {
@@ -30,7 +33,8 @@ body {
   .container {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     background-color: #222222;
   }
 }
@@ -104,12 +108,12 @@ body {
   ul {
     display: flex;
     list-style: none;
-    position: relative;
-    left: -50px;
+    margin: 10px;
   }
   li {
     padding-left: 20px;
     padding-right: 20px;
+    border-right: 1px solid white;
   }
 }
 
@@ -127,6 +131,9 @@ h2,
   font-family: $font__main;
   font-size: 1rem;
   line-height: 1.5;
+  :focus {
+    outline: none;
+  }
 }
 
 .content-area {
@@ -201,4 +208,45 @@ h2,
   }
 }
 
+.page .post-archives ul li,
+.page .category-archives ul li,
+.page .tag-archives ul li {
+  // padding-bottom: 25px;
+  @include tablet {
+    p,
+    a,
+    h2,
+    .source {
+      font-size: 1.5rem !important;
+    }
+  }
+  @include desktop {
+    p,
+    a,
+    h2,
+    .source {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+.page .post-archives h2,
+.page .tag-archives h2,
+.page .category-archives h2 {
+  @include tablet {
+    font-size: 1.5rem !important;
+  }
+  @include desktop {
+    font-size: 2rem !important;
+  }
+}
+
 /* Submit a Quote Page */
+
+.page .entry-header .entry-title {
+  padding-left: 20px;
+}
+
+.page .button-container {
+  padding: 20px;
+}

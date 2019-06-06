@@ -65,15 +65,7 @@ function qod_scripts()
 	wp_enqueue_script("qod-scripts", $script_url, array("jquery"), false, true);
 	wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-	//TODO add Font Awesome qp-enqueuee_style, used for the giant quotes
-	//add the quotes with ::after and ::before - these are psuedo-element meaning after this thing or that thing, add some additional markup or something
-	//using : and :: are the same thing, don't worry about it
-	//if the quotes section is an article, for example, do before and after that field/div - note that you'll lose the quotes on mobile
 
-	//TODO add your own script.js file wp_enqueue_script
-
-	//IF YOU GET STUCK THEY ARE IN THE INHABITENT THEME AS WELL FOR REFERENCE
-	//add the logo in header .php
 
 	// REST:
 	wp_localize_script("qod-scripts", "api_vars", array(

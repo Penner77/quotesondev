@@ -1,21 +1,24 @@
 // FOOTER SCSS
 
 .site-info {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin: 1em;
-  overflow: hidden;
+  padding-top: 20px;
+
   .footer-about,
   .footer-archives,
   .footer-submission,
   .red-brand {
-    color: #0c0;
+    margin-left: 8px;
+    color: $color__link;
   }
   .site-info ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: -1px;
   }
   .site-info li {
     flex-grow: 1;
@@ -23,11 +26,23 @@
     margin: 0.25em 0;
     padding: 1 1em;
     text-align: center;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   p {
     font-family: $font__main;
     font-size: 1rem;
     line-height: 1.5;
+  }
+  .footer-branding {
+    padding-left: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .red-brand a,
+  a {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
