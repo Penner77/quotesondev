@@ -43,7 +43,7 @@ get_header(); ?>
                                 </label>
                                 <textarea rows="3" columns="20" name="quote_content" id="quote-content" class="input-form field-required" required>
 
-                                                                                                        </textarea>
+                                                                                                                </textarea>
                             </p>
                         </div>
 

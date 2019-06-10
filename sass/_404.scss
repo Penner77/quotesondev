@@ -1,3 +1,9 @@
 .error404 .search-submit {
   padding-left: 25px;
 }
+
+.error404 .search-form fieldset label .search-submit {
+  font-family: 'font-awesome';
+  content: '\f002';
+  color: white;
+}

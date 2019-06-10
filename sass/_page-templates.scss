@@ -10,6 +10,7 @@ body {
 .home .entry-content,
 .blog .entry-content,
 .single .entry-content,
+.archive .entry-content,
 .page .type-page .entry-content,
 .entry-meta {
   padding-bottom: 25px;
@@ -17,15 +18,22 @@ body {
     p,
     h2,
     .source {
-      font-size: 2rem;
+      font-size: 2.5rem !important;
     }
   }
   @include tablet {
     p,
     h2,
     .source {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
+  }
+}
+
+@include desktop {
+  .button-submission {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -109,6 +117,7 @@ body {
     display: flex;
     list-style: none;
     margin: 10px;
+    padding-left: 0;
   }
   li {
     padding-left: 20px;
@@ -159,7 +168,7 @@ h2,
   p {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 400px;
     background-color: #222;
     color: white;
     font-family: Exo, sans-serif;
@@ -168,6 +177,10 @@ h2,
     padding: 20px;
     margin: 0, 0, 25px, 0;
   }
+}
+
+.page .quote-submission-wrapper p label {
+  padding-bottom: 10px;
 }
 
 @include desktop {
@@ -185,7 +198,20 @@ h2,
     }
   }
 }
-/* Abut Page */
+/* About Page */
+
+.page .type-page .entry-content p {
+  margin: 0;
+}
+
+.page .type-page .entry-content p {
+  @include tablet {
+    font-size: 1.25rem !important;
+  }
+  @include desktop {
+    font-size: 1.5rem !important;
+  }
+}
 
 /* Page Archives */
 
@@ -208,6 +234,14 @@ h2,
   }
 }
 
+.archive .entry-content p {
+  @include tablet {
+    font-size: 1.5rem !important;
+  }
+  @include desktop {
+    font-size: 2rem !important;
+  }
+}
 .page .post-archives ul li,
 .page .category-archives ul li,
 .page .tag-archives ul li {
@@ -244,7 +278,7 @@ h2,
 /* Submit a Quote Page */
 
 .page .entry-header .entry-title {
-  padding-left: 20px;
+  padding-top: 25px;
 }
 
 .page .button-container {

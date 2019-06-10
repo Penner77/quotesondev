@@ -13,7 +13,7 @@
 	<div class="site-info">
 
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-		<span class="footer-branding">Brought to you by <a href="https://redacademy.com/vancouver/"></span><span class="red-brand">RED Academy</span></a>
+		<span class="red-brand"><span class="footer-branding">Brought to you by <a href="https://redacademy.com/vancouver/"></span>RED Academy</span></a>
 
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->

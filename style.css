@@ -597,6 +597,16 @@ a,
 .hentry {
   margin: 0 0 1.5rem; }
 
+.archive h1.page-title,
+.archive .hentry {
+  border-bottom: 1px dotted white;
+  padding-bottom: 20px; }
+
+.search .site-content .page-title,
+.search .hentry {
+  border-bottom: 1px dotted white;
+  padding-bottom: 20px; }
+
 .updated:not(.published) {
   display: none; }
 
@@ -640,6 +650,7 @@ body {
 .home .entry-content,
 .blog .entry-content,
 .single .entry-content,
+.archive .entry-content,
 .page .type-page .entry-content,
 .entry-meta {
   padding-bottom: 25px; }
@@ -653,13 +664,16 @@ body {
     .single .entry-content p,
     .single .entry-content h2,
     .single .entry-content .source,
+    .archive .entry-content p,
+    .archive .entry-content h2,
+    .archive .entry-content .source,
     .page .type-page .entry-content p,
     .page .type-page .entry-content h2,
     .page .type-page .entry-content .source,
     .entry-meta p,
     .entry-meta h2,
     .entry-meta .source {
-      font-size: 2rem; } }
+      font-size: 2.5rem !important; } }
   @media (min-width: 620px) {
     .home .entry-content p,
     .home .entry-content h2,
@@ -670,13 +684,25 @@ body {
     .single .entry-content p,
     .single .entry-content h2,
     .single .entry-content .source,
+    .archive .entry-content p,
+    .archive .entry-content h2,
+    .archive .entry-content .source,
     .page .type-page .entry-content p,
     .page .type-page .entry-content h2,
     .page .type-page .entry-content .source,
     .entry-meta p,
     .entry-meta h2,
     .entry-meta .source {
-      font-size: 1.5rem; } }
+      font-size: 1.75rem; } }
+
+@media (min-width: 1080px) {
+  .button-submission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 body .container {
   margin: 0 auto;
@@ -747,7 +773,8 @@ body .container {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 10px; }
+  margin: 10px;
+  padding-left: 0; }
 
 .site-info .menu li {
   padding-left: 20px;
@@ -802,7 +829,7 @@ h2,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 250px;
+    max-width: 400px;
     background-color: #222;
     color: white;
     font-family: Exo, sans-serif;
@@ -810,6 +837,9 @@ h2,
     line-height: 1.5;
     padding: 20px;
     margin: 0, 0, 25px, 0; }
+
+.page .quote-submission-wrapper p label {
+  padding-bottom: 10px; }
 
 @media (min-width: 1080px) {
   .content-area::before {
@@ -829,7 +859,18 @@ h2,
     padding-left: 25px;
     content: '\f10e'; } }
 
-/* Abut Page */
+/* About Page */
+.page .type-page .entry-content p {
+  margin: 0; }
+
+@media (min-width: 620px) {
+  .page .type-page .entry-content p {
+    font-size: 1.25rem !important; } }
+
+@media (min-width: 1080px) {
+  .page .type-page .entry-content p {
+    font-size: 1.5rem !important; } }
+
 /* Page Archives */
 .post-archives ul,
 .category-archives ul,
@@ -853,6 +894,14 @@ h2,
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px; }
+
+@media (min-width: 620px) {
+  .archive .entry-content p {
+    font-size: 1.5rem !important; } }
+
+@media (min-width: 1080px) {
+  .archive .entry-content p {
+    font-size: 2rem !important; } }
 
 @media (min-width: 620px) {
   .page .post-archives ul li p,
@@ -898,7 +947,7 @@ h2,
 
 /* Submit a Quote Page */
 .page .entry-header .entry-title {
-  padding-left: 20px; }
+  padding-top: 25px; }
 
 .page .button-container {
   padding: 20px; }
@@ -912,6 +961,11 @@ h2,
   position: relative;
   margin: 1em;
   padding-top: 20px; }
+  @media (min-width: 1080px) {
+    .site-info {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
   .site-info .footer-about,
   .site-info .footer-archives,
   .site-info .footer-submission,
@@ -950,10 +1004,15 @@ h2,
     color: white;
     margin-top: 10px;
     margin-bottom: 10px; }
-  .site-info .red-brand a,
+  .site-info .red-brand,
   .site-info a {
     margin-top: 10px;
     margin-bottom: 10px; }
 
 .error404 .search-submit {
   padding-left: 25px; }
+
+.error404 .search-form fieldset label .search-submit {
+  font-family: 'font-awesome';
+  content: '\f002';
+  color: white; }

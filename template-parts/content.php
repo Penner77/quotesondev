@@ -43,5 +43,5 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url', true);
 
 <?php if (is_home() || is_single()) :  ?>
 	<!-- above says "if it's a home/blog page, or a single page type...." -->
-	<button type="button" id="new-quote-button">Show Me Another!</button>
+	<div class="button-submission"><button type="button" id="new-quote-button">Show Me Another!</button></div>
 <?php endif; ?>

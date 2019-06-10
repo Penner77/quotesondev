@@ -6,6 +6,9 @@
   position: relative;
   margin: 1em;
   padding-top: 20px;
+  @include desktop {
+    justify-content: flex-end;
+  }
 
   .footer-about,
   .footer-archives,
@@ -40,7 +43,7 @@
     margin-bottom: 10px;
   }
 
-  .red-brand a,
+  .red-brand,
   a {
     margin-top: 10px;
     margin-bottom: 10px;
