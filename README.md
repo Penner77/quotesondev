@@ -1,19 +1,19 @@
-#Quotes On Dev
+# Quotes On Dev
 Quotes on Dev is an app that uses a GET request to a WP API to dynamically add a new quote to the front page without having the page refresh each time, it also uses a POST request to the WP API to submit a new quote into the site's database.
 
-Technologies Used
-Gulp  
+Technologies Used  
+Gulp   
 Jquery  
 HTML  
 SASS  
 Wordpress  
 PHP  
 Javascript  
-Databases
+Databases  
 
 <img src= "assets/images/quotes-screenshot1.png" width="600" height ="400">
 
-#Functionality:  
+# Functionality:  
 Be built using WordPress as CMS  
 Contain a About page, an Archives page, and Submit a Quote page  
 Contain a blog post index page and a single view for blog posts  
@@ -26,8 +26,8 @@ Show a message to unauthenticated users on the “Submit a Quote” page that in
 
 <img src= "assets/images/quotes-scroll.gif" width="600" height ="400">
 
-#Javascript Goals:
-Make a GET request to a WP API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API  
-Make a POST request to a WP API endpoint using Ajax to submit a new quote to the quote to the site  
+# Javascript Goals:
+Make a GET request to a WP API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API    
+Make a POST request to a WP API endpoint using Ajax to submit a new quote to the quote to the site   
 Clear the quote submission form and show an affirmative message when a quote is successfully submitted to the database  
-Show an error message when a quote is not successfully submitted to the database
+Show an error message when a quote is not successfully submitted to the database  
