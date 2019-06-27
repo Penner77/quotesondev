@@ -11,6 +11,8 @@ PHP
 Javascript  
 Databases
 
+<img src= "assets/images/quotes-screenshot1.png" width="600" height ="400">
+
 #Functionality:  
 Be built using WordPress as CMS  
 Contain a About page, an Archives page, and Submit a Quote page  
@@ -21,6 +23,8 @@ Fetch additional random posts on the front page using the WP API
 Display one item per page for the blog index and author archives, five items per page for category and tag archives, and ten items per page for search results  
 Accept new quote submissions from the front-end of the site using WP API (for logged in users only), and set those submissions to pending by default  
 Show a message to unauthenticated users on the “Submit a Quote” page that informs them they must log in to submit a new quote
+
+<img src= "assets/images/quotes-scroll.gif" width="600" height ="400">
 
 #Javascript Goals:
 Make a GET request to a WP API endpoint using Ajax to dynamically add a new quote to the front page, and corresponding update the URL using the History API  
